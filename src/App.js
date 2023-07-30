@@ -1,23 +1,28 @@
+import {useRef, useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Fetch from './components/Fetch';
 
 function App() {
+
+  // const [first, setfirst] = useState(" ")
+
+  // const clearInput = (e)=>{
+  //   setfirst(" ")
+  // }
+
+  // const nameInput  =useRef(null)
+
+  // const clearInput = (e)=>{
+  //   nameInput.current.value = ""
+  // }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <input type="text" ref={nameInput}/>
+      <button type="submit" onClick={clearInput}>Submit</button> */}
+      <Fetch></Fetch>
     </div>
   );
 }
